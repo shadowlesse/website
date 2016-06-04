@@ -3,7 +3,7 @@
 $(document).ready(function(e) {
 	
 	$('#marquee1').kxbdSuperMarquee({
-				distance:1116,
+				distance:1096,
 				time:2,
 				btnGo:{left:'#goL',right:'#goR'},
 				direction:'left'
@@ -16,17 +16,7 @@ $(document).ready(function(e) {
 				direction:'left'
 			});
 	
-	var goL_small_img = $('#goL_small img');
-	var goR_small_img = $('#goR_small img');
-	goL_small_img.mousedown(function(){
-			$(this).attr("src","images/arrow_07_1.jpg");
-			goR_small_img.attr("src","images/arrow_08_1.jpg");
-		});
-	goR_small_img.mousedown(function(){
-			$(this).attr("src","images/arrow_08.jpg");
-			goL_small_img.attr("src","images/arrow_07.jpg");
-		});
-	
+
 			
 	$('.fancybox').fancybox();
 	
