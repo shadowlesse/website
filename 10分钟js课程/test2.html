@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>10分钟js课程</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js" ></script>
+
+	<script type="text/javascript" src="js/main.js" ></script>
+
+	<script type="text/javascript" >
+		console.log("before:"+document.getElementById("dom"));
+		$(document).ready(function(){
+			console.log("before:"+document.getElementById("dom"));
+		});
+	</script>
+
+</head>
+<body>
+
+	<div>
+		<div>
+			1. JQuery
+		</div>
+		
+		<br/>
+		ps:js cdn
+		<br/>
+		<a href="http://cdn.code.baidu.com/">http://cdn.code.baidu.com/</a>
+		<br/>
+		jquery:
+		<br/>
+		<a href="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js">http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js</a>
+		<br/>
+		<a href="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js</a>
+
+
+		<div id="dom">
+			2. Document ready
+		</div>
+
+		<div id="func">
+			3. jquery functions
+			<br/>
+			<input class="normal" type="button" name="" value="before" />
+			<br/>
+			<input class="big" type="button" name="" value="mouse over!" />
+			<br/>
+		</div>
+	</div>
+
+	<script type="text/javascript" >
+		console.log("after");
+		var second = $('#func input:eq(1)');
+		second.mouseover(function(){
+			$(this).addClass("red");
+		});
+		second.mouseout(function(){
+			$(this).removeClass("red");
+		});
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>10分钟js课程</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript" src="js/base.js" ></script>
+
+	<script type="text/javascript" >
+		console.log("before");
+		console.log("before:"+document.getElementById("leezile"));
+	</script>
+
+
+</head>
+<body>
+
+	<div>
+		<div>
+			1. JS引用(文件，前，后)
+		</div>
+
+		<div>
+			2. Debug
+		</div>
+
+		<div id="leezile" name="dom_name">
+			3. DOM	
+		</div>
+	</div>
+	
+	<script type="text/javascript" >
+		console.log("after");
+		console.log("after:"+document.getElementById("leezile"));
+	</script>
+
+	<script type="text/javascript" >
+		var tag_node=document.getElementById("leezile");
+		console.log("tag_node nodeType:"+tag_node.nodeType);
+		console.log(tag_node.nodeValue);
+		console.log(tag_node.nodeName);
+
+		var atrr_node=tag_node.getAttributeNode("name");
+		console.log("atrr_node nodeType:"+atrr_node.nodeType);
+		console.log(atrr_node.nodeValue);
+		console.log(atrr_node.nodeName);
+
+		var text_node=tag_node.firstChild;
+		console.log("text_node nodeType:"+text_node.nodeType);
+		console.log(text_node.nodeValue);
+		console.log(text_node.nodeName);
+
+	</script>
+
+</body>
+</html>
