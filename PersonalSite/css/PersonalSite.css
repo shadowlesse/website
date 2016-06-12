@@ -177,7 +177,7 @@ section{
 	border:3px solid #ffba00;
 }
 
-/************************works***************************/
+/************************about***************************/
 
 .about{
 	height:1220px;
@@ -319,3 +319,74 @@ section{
 	padding-left:24px;
 	line-height:16px;
 }
+/************************contact***************************/
+.contact{
+	height:1226px;
+	background:url(../images/contact_bg_46.jpg) no-repeat center center;
+}
+
+.contact h2{
+	color:#000;
+	font-family:"Arial Black";
+	font-size:100px;
+	line-height:102px;
+	border-bottom:6px solid #ffba00;
+	width:430px;
+	margin-left:770px;
+	padding-top:282px;
+}
+.contact h3{
+	color:#000;
+	font-family:"Arial Black";
+	line-height:66px;
+	font-size:72px;
+	margin-left:1058px;
+}
+.details{
+	float:left;
+	margin-top:105px;
+	margin-left:177px;
+	width:354px;
+	height:178px;
+	padding:42px 48px 48px;
+	background:#343434 url(../images/thx_03.jpg) no-repeat 299px 42px;
+}
+.details h4{
+	width:66px;
+	line-height:27px;
+	font-family:Arial;
+	font-size:22px;
+	font-weight:lighter;
+	color:#ffba00;
+	border-bottom:1px solid #ffba00;
+	margin-bottom:18px;
+}
+.details p{
+	font-family:Arial;
+	font-size:12px;
+	line-height:24px;
+	color:#fff;
+}
+.details a{
+	color:#fff;
+}
+.icons{
+	height:73px;
+	padding-top:35px;
+	background:url(../images/welcome_07.jpg) no-repeat right 35px;
+}
+.icons img{
+	margin-right:9px;
+}
+.message{
+	float: right;
+	margin-top:105px;
+	width:514px;
+	height:320px;
+}
+.enter{
+	width:514px;
+	height:35px;
+	background-color:#343434;
+}
+
