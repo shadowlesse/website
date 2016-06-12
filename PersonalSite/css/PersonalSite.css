@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+input{
+	border:none;
+}
+/************************navigation***************************/
+nav{
+	background-color:#000;
+}
+#wrap{
+	width:1200px;
+	height:99px;
+	margin:0 auto;
+}
+#wrap>a{
+	float:left;
+}
+.navigation{
+	float:right;
+}
+.navigation li{
+	float: left;
+}
+.navigation li a{
+	line-height:99px;
+	font-family:Arial;
+	font-size:16px;
+	margin-left:80px;
+	text-transform:uppercase;
+	color:#fff;
+}
+.navigation .text{
+	color:#ffd100;
+}
+
+/************************banner***************************/
+
+#banner{
+	background:url(../images/banner_bg_02.png) no-repeat center center;
+}
+
+section{
+	width:1200px;
+	height:932px;
+	margin:0 auto;
+}
+
+.slogan{
+	width:486px;
+	height:300px;
+	float:right;
+	padding-top:198px;
+}
+.slogan h1{
+	font-family:"Arial Black";
+	font-size:72px;
+	line-height:75px;
+	color:#fff;
+	margin-bottom:5px;
+}
+.slogan h2{
+	font-family:Arial;
+	font-size:16px;
+	color:#fff;
+	line-height:25px;
+	margin-bottom:45px;
+}
+.slogan h2 span{
+	color:#ffd100;
+}
+.box{
+	width:486px;
+	height:50px;
+	text-align:center;
+}
+.box a{
+	font-family:Arial;
+	font-size:12px;
+	text-transform:uppercase;
+}
+.box1{
+	float:left;
+	width:104px;
+	height:46px;
+	border:2px solid #ca9509;
+	margin-right:20px;
+}
+.box1 a{
+	color:#ca9509;
+	line-height:46px;
+}
+.box2{
+	float: left;
+	width:173px;
+	height:50px;
+	background-color:#ffd100;
+}
+.box2 a{
+	color:#000;
+	line-height:50px;
+}
+
+/************************main***************************/
+.inner{
+	width:1200px;
+	margin:0 auto;
+}
+.works{
+	height:1044px;
+	position:relative;
+	background:url(../images/temp_03.jpg) no-repeat center center;
+}
+.about{
+	height:1220px;
+}
+.works h2{
+	color:#000;
+	font-family:"Arial Black";
+	font-size:100px;
+	line-height:102px;
+	border-bottom:6px solid #ffba00;
+	width:336px;
+	position:absolute;
+	right:0;
+	top:-139px;
+}
+.about h2{
+	color:#000;
+	font-family:"Arial Black";
+	font-size:100px;
+	line-height:102px;
+	border-bottom:6px solid #ffba00;
+	width:320px;
+}
+.about h3{
+	color:#000;
+	font-family:"Arial Black";
+	line-height:66px;
+	font-size:72px;
+}
+.about section{
+	height:973px;
+	padding-top:73px;
+}
+.left{
+	width:730px;
+	height:973px;
+	float: left;
+}
+.left li{
+	width:242px;
+	height:242px;
+	float:left;
+	margin-bottom:2px;
+}
+.left li:nth-child(3), .left li:nth-child(5), .left li:nth-child(8), .left li:nth-child(10){
+	box-shadow:0 1px 2px rgba(0,0,0,0.5);
+}
+.left li:nth-child(3){
+	background:#2a2929 url(../images/icons_07.jpg) no-repeat 147px 147px;
+}
+.left li:nth-child(5){
+	background:#2a2929 url(../images/icons_13.jpg) no-repeat 147px 147px;
+}
+.left li:nth-child(6){
+	background:#fff url(../images/icons_10.jpg) no-repeat 147px 147px;
+	box-shadow:0 1px 2px rgba(0,0,0,0.5);
+}
+.left li:nth-child(8){
+	background:#2a2929 url(../images/icons_17.jpg) no-repeat 147px 147px;
+}
+.left li:nth-child(10){
+	background:#2a2929 url(../images/icons_20.jpg) no-repeat 147px 147px;
+}
+
+.left p{
+	width:93px;
+	height:54px;
+	line-height:54px;
+	font-family:"Avenir Next Condensed";
+	font-size:72px;
+	color:#fff;
+	background:url(../images/percent1.jpg) no-repeat right 49px;
+	padding-top:49px;
+	padding-left:30px;
+}
+.ps p{
+	color:#000;
+	background:url(../images/percent2.jpg) no-repeat right 49px;
+}
+.left span{
+	width:93px;
+	height:30px;
+	line-height:30px;
+	font-family:Arial;
+	font-size:14px;
+	color:#fff;
+	padding-left:30px;
+}
+.ps span{
+	color:#000;
+}
+
+
+.right{
+	width:345px;
+	height:747px;
+	float: left;
+	background:url(../images/phone_14.jpg) no-repeat top left;
+	margin-top:175px;
+	position:relative;
+}
+.intro{
+	width:321px;
+	height:281px;
+	position:absolute;
+	top:385px;
+	left:12px;
+	background-color:#c7c7c7;
+	
+}
+.intro h3{
+	height:46px;
+	line-height:46px;
+	border-bottom:2px solid #999999;
+	font-family:"Times New Roma";
+	font-size:20px;
+	color:#000;
+	padding-left:24px;
+}
+.resume span{
+	font-family:Arial;
+	font-size:14px;
+	color:#666;
+}
+.resume li{
+	font-family:Arial;
+	font-size:14px;
+	line-height:28px;
+	padding-left:24px;
+}
+.resume span:last-child{
+	color:#555;
+	padding-left:12px;
+}
+.intro h4{
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	line-height:30px;
+	color:#000;
+	text-transform:uppercase;
+	padding-left:24px;
+	margin-top:14px;
+}
+.intro p{
+	font-family:Arial;
+	font-size:14px;
+	color:#555;
+	padding-left:24px;
+	line-height:16px;
+}

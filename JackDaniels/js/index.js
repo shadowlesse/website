@@ -19,11 +19,11 @@ $(document).ready(function(e) {
 	
 	var goL_small_img = $('#goL_small img');
 	var goR_small_img = $('#goR_small img');
-	goL_small_img.mousedown(function(){
+	goL_small_img.click(function(){
 			$(this).attr("src","images/arrow_07_1.jpg");
 			goR_small_img.attr("src","images/arrow_08_1.jpg");
 		});
-	goR_small_img.mousedown(function(){
+	goR_small_img.click(function(){
 			$(this).attr("src","images/arrow_08.jpg");
 			goL_small_img.attr("src","images/arrow_07.jpg");
 		});
