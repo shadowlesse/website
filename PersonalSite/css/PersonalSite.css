@@ -119,14 +119,13 @@ section{
 	width:1200px;
 	margin:0 auto;
 }
+
+/************************works***************************/
 .works{
-	height:1044px;
+	height:950px;
 	position:relative;
-	background:url(../images/temp_03.jpg) no-repeat center center;
 }
-.about{
-	height:1220px;
-}
+
 .works h2{
 	color:#000;
 	font-family:"Arial Black";
@@ -138,6 +137,62 @@ section{
 	right:0;
 	top:-139px;
 }
+.big{
+	width:957px;
+	float:left;
+}
+.big img{
+	margin-top:54px;
+	margin-bottom:27px;
+}
+.discription h3{
+	font-family:"Times New Roma";
+	font-size:20px;
+	line-height:46px;
+	color:#000;
+	text-transform:uppercase;
+}
+.discription p{
+	font-family:Arial;
+	font-size:12px;
+	color:#000;
+	line-height:18px;
+}
+.small{
+	width:214px;
+	float:right;
+	margin-top:54px;
+}
+.small li{
+	width:214px;
+	height:125px;
+	margin-bottom:14px;
+	border-radius:20px;
+}
+.small li:first-child{
+	background-image:url(../images/works_07.jpg);
+	border:3px solid #ffba00;
+	width:208px;
+	height:119px;
+}
+.small li:nth-child(2){
+	background-image:url(../images/works_08.jpg);
+}
+.small li:nth-child(3){
+	background-image:url(../images/works_06.jpg);
+}
+.small li:nth-child(4){
+	background-image:url(../images/works_12.jpg);
+}
+.small li:last-child{
+	background-image:url(../images/works_15.jpg);
+}
+/************************works***************************/
+
+.about{
+	height:1220px;
+}
+
 .about h2{
 	color:#000;
 	font-family:"Arial Black";
