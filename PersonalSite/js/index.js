@@ -13,6 +13,11 @@ $(document).ready(function(e) {
 		$(arr[i]).mouseover(updateNumber(i,parseInt(arr[i].innerHTML)));
 	}
 
+	$("ul.small li img").mousedown(function(){
+		$("ul.small li img").removeClass('pic');
+		$(this).addClass('pic');
+	});
+
 });
 
 
