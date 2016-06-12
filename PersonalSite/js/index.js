@@ -3,15 +3,22 @@
 
 $(document).ready(function(e) {
    $('.navigation>li').click(function(){
-   	$('.navigation>li>a').removeClass()
-	$(this).find('a').addClass('text')
-   })
+   	$('.navigation>li>a').removeClass();
+	$(this).find('a').addClass('text');
+   });
 
 	arr = $('.left li p');
 
 	for(var i = 0, l = arr.length; i < l; i++) { 
-		$(arr[i]).mouseover(updateNumber(i,parseInt(arr[i].innerHTML)));
+		addElement(arr[i].id, parseInt(arr[i].innerHTML));
 	}
+
+	$('.left').mouseover(function(e){
+		if(e.target.nodeName=="P"){
+			up(e.target.id);
+		}
+	});
+
 
 	$("ul.small li img").mousedown(function(){
 		$("ul.small li img").removeClass('pic');
@@ -37,16 +44,23 @@ $(document).ready(function(e) {
 		};
 });
 
-
-function updateNumber(element,n){
-	var ps = arr[element];
-	var num = parseInt(ps.innerHTML);
+function up(id){
+	n = dc[id];
+	ele = $("#"+id).get(0);
+	var num = parseInt(ele.innerHTML);
 	if(num==n){
 		num=0;
 	}
-	ps.innerHTML = num + 1;
+	ele.innerHTML = num + 1;
 	if(num < n-1){
-		window.setTimeout("updateNumber("+element+"," + n + ")",2);
+		window.setTimeout("up('"+ id + "')",2);
 	}
+}
+
+
+dc={};
+
+function addElement(id,n){
+	dc[id]=n;
 }
 
