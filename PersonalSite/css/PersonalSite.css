@@ -167,14 +167,33 @@ section{
 	width:214px;
 	height:125px;
 	margin-bottom:14px;
-}
-.small li a img{
 	border-radius:20px;
 }
-.pic{
+.small li:first-child{
+	background-image:url(../images/works_07.jpg);
+}
+.small li:nth-child(2){
+	background-image:url(../images/works_08.jpg);
+}
+.small li:nth-child(3){
+	background-image:url(../images/works_06.jpg);
+}
+.small li:nth-child(4){
+	background-image:url(../images/works_12.jpg);
+}
+.small li:last-child{
+	background-image:url(../images/works_15.jpg);
+}
+.small li p{
+	color:#fff;
+	font-family:Arial;
+	font-size:20px;
+	text-align:center;
+	line-height:119px;
 	width:208px;
 	height:119px;
 	border:3px solid #ffba00;
+	border-radius:20px;
 }
 
 /************************about***************************/
